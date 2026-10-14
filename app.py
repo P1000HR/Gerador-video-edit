@@ -1,16 +1,4 @@
-import streamlit as st
-from PIL import Image, ImageDraw, ImageFont
-import textwrap
-import os
-import tempfile
-from gtts import gTTS
-import numpy as np
-
-st.set_page_config(page_title='GERADOR TIKTOK LEVE', layout='centered')
-st.title('🎬 Gerador TikTok - Celular Fraco')
-st.caption('Cole o roteiro > Gera video vertical com legenda')
-
-texto = st.text_area('Roteiro (30s)', 'Perdi 100 reais em 1 minuto no futuro. Entrei com 150x no QNT. Resultado? Liquidado. Aprendi: alavanca nao e atalho.', height=150)
+ = st.text_area('Roteiro (30s)', 'Perdi 100 reais em 1 minuto no futuro. Entrei com 150x no QNT. Resultado? Liquidado. Aprendi: alavanca nao e atalho.', height=150)
 
 cor_fundo = st.color_picker('Cor fundo', '#000000')
 cor_texto = st.color_picker('Cor legenda', '#FFFFFF')
@@ -79,4 +67,4 @@ if st.button('GERAR VIDEO'):
             st.info('Dica: No TikTok, importa essa imagem > adiciona som > dura 20s automaticamente')
 
 st.divider()
-st.write('**Como postar:** Baixa > abre TikTok > + > Enviar > escolhe o video > adiciona legenda #trading #futuros #qnt')
+st.write('**Como postar:** Baixa
